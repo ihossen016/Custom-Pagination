@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background: #f8f7ff;
+}
+.app h3 {
+    font-size: 30px;
+    color: #000;
+}
+.cp-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.cp-pagination button {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+}
+.cp-pagination button.active {
+    background: #000;
+    color: #fff;
+}
+.cp-pagination button:hover {
+    background: #000;
+    color: #fff;
+}
