@@ -1,19 +1,20 @@
 # Project Name
 
-Frontend Template
+Custom Pagination
 
 ## After Cloning
 
-run the script `npm i` in the project directory to install all the required packages
+You can use the custom pagination component anywhere you need it.
+This Component requires only three pros to control it.
 
-## Available Scripts
+When you use it you have to pass
 
-In the project directory, you can run:
+1. total number of pages as `totalPage`
 
-### `yarn start` `npm start`
+2. value of the current page as `currentPage` and
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. `setCurrentPage` function to move from one page to another.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Design Customization
+
+You can easily customize the style of the pagination using css. Just take the parent class `cp-pagination` and style as you needed.
