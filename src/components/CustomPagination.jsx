@@ -13,16 +13,16 @@ function CustomPagination({ totalPage, currentPage, setCurrentPage }) {
     }
 
     if (pageNumbers.length > 5) {
-        if (currentPage - 3 <= 2) {
-            firstSlice = [...pageNumbers.slice(0, 6)];
-        } else if (currentPage + 2 >= totalPage) {
+        if (currentPage - 2 <= 1) {
+            firstSlice = [...pageNumbers.slice(0, 4)];
+        } else if (currentPage > 3 && currentPage + 2 < totalPage) {
             firstSlice = [];
-            thirdSlice = [...pageNumbers.slice(totalPage - 5, totalPage)];
-        } else if (currentPage > 5 && currentPage + 2 < totalPage) {
-            thirdSlice = [];
             secondSlice = [
-                ...pageNumbers.slice(currentPage - 3, currentPage + 2),
+                ...pageNumbers.slice(currentPage - 2, currentPage + 1),
             ];
+        } else if (currentPage + 2 >= totalPage) {
+            secondSlice = [];
+            thirdSlice = [...pageNumbers.slice(totalPage - 4, totalPage)];
         }
     } else {
         beforeSlice = [...pageNumbers];
