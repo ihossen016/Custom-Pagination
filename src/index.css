@@ -42,3 +42,15 @@
     background: #000;
     color: #fff;
 }
+
+/* Media Query */
+@media only screen and (max-width: 500px) {
+    .cp-pagination {
+        gap: 10px;
+    }
+    .cp-pagination button {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+}

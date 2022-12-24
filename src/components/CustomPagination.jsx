@@ -71,7 +71,7 @@ function CustomPagination({ totalPage, currentPage, setCurrentPage }) {
                             {pageNumber}
                         </button>
                     ))}
-                    <button>...</button>
+                    <span>...</span>
                     <button
                         key={lastPage}
                         className={currentPage == lastPage ? "active" : ""}
@@ -91,7 +91,7 @@ function CustomPagination({ totalPage, currentPage, setCurrentPage }) {
                     >
                         {firstPage}
                     </button>
-                    <button>...</button>
+                    <span>...</span>
                     {secondSlice.map(pageNumber => (
                         <button
                             key={pageNumber}
@@ -103,7 +103,7 @@ function CustomPagination({ totalPage, currentPage, setCurrentPage }) {
                             {pageNumber}
                         </button>
                     ))}
-                    <button>...</button>
+                    <span>...</span>
                     <button
                         key={lastPage}
                         className={currentPage == lastPage ? "active" : ""}
@@ -123,7 +123,7 @@ function CustomPagination({ totalPage, currentPage, setCurrentPage }) {
                     >
                         1
                     </button>
-                    <button>...</button>
+                    <span>...</span>
                     {thirdSlice.map(pageNumber => (
                         <button
                             key={pageNumber}
@@ -139,11 +139,6 @@ function CustomPagination({ totalPage, currentPage, setCurrentPage }) {
             )}
 
             <button
-                // href={
-                //     currentPage >= totalPage
-                //         ? "javascript:void(0)"
-                //         : `javascript:void(0)`
-                // }
                 onClick={() =>
                     currentPage < totalPage && setCurrentPage(currentPage + 1)
                 }
